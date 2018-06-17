@@ -21,6 +21,7 @@ Plugin 'tpope/vim-commentary' " comment using gcc
 Plugin 'virtualenv.vim'
 Plugin 'flazz/vim-colorschemes' 
 Plugin 'rking/ag.vim' " ag searching
+Plugin 'https://github.com/vim-scripts/vim-auto-save.git' "auto save plugin
 call vundle#end()            " required
 filetype plugin indent on    " required
 "------------plugin options----------------------------------
