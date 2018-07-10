@@ -1,4 +1,4 @@
-# add to bash_profile .bashrc
+# add to bash_profile . ~/.bashrc
 set -g default-terminal "screen-256color" 
 set -g mode-keys vi 
 

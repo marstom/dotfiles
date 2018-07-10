@@ -22,6 +22,7 @@ Plugin 'virtualenv.vim'
 Plugin 'flazz/vim-colorschemes' 
 Plugin 'rking/ag.vim' " ag searching
 Plugin 'https://github.com/vim-scripts/vim-auto-save.git' "auto save plugin
+Plugin 'pangloss/vim-javascript' " javascript better support
 call vundle#end()            " required
 filetype plugin indent on    " required
 "------------plugin options----------------------------------
