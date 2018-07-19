@@ -20,7 +20,9 @@ Plugin 'kien/ctrlp.vim' " C^p
 Plugin 'tpope/vim-commentary' " comment using gcc
 Plugin 'virtualenv.vim'
 Plugin 'flazz/vim-colorschemes' 
-Plugin 'kannokanno/previm' " live preview rst md in vim
+Plugin 'rking/ag.vim' " ag searching
+Plugin 'https://github.com/vim-scripts/vim-auto-save.git' "auto save plugin
+Plugin 'pangloss/vim-javascript' " javascript better support
 call vundle#end()            " required
 filetype plugin indent on    " required
 "------------plugin options----------------------------------
@@ -42,9 +44,6 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 let g:syntastic_quiet_messages = { "level": "warnings" }
 let g:syntastic_mode_map={'mode': 'passive'}
 
-"previm open
-" use PrevimOpen to preview md or rst file 
-let g:previm_open_cmd = 'google-chrome'
 "-----------------colors-------------------------------------
 colorscheme Benokai
 :au FocusLost * :wa
