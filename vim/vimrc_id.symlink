@@ -19,11 +19,12 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim' " C^p
-Plugin 'taglist.vim' " Tlist
 Plugin 'tpope/vim-commentary' " comment using gcc
 Plugin 'python.vim' 
 Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim' " can use silversearcher-ag in vim, must have it installed first
+Plugin 'https://github.com/vim-scripts/vim-auto-save.git' " autosave
+Plugin 'airblade/vim-gitgutter' " highlight new lines in git
 " Plugin 'severin-lemaignan/vim-minimap'
 
 call vundle#end()            " required
@@ -31,6 +32,7 @@ filetype plugin indent on    " required
 "------------plugin options----------------------------------
 "ycm options
 let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py" 
+set completeopt-=preview " no docs preview
  
 " for python
 let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
@@ -42,6 +44,7 @@ let g:ycm_complete_in_strings = 1 " Completion in string
 " vim-auto-save
 let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+
 
 " syntastic
 let g:syntastic_quiet_messages = { "level": "warnings" }
