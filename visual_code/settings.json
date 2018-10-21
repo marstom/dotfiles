@@ -1,0 +1,21 @@
+{
+    "window.zoomLevel": 0,
+    "files.autoSave": "off",
+    "vim.disableExtension": false, 
+    "editor.minimap.enabled": false,
+    "git.ignoreLegacyWarning": true,
+    "window.menuBarVisibility": "default",
+    "workbench.activityBar.visible": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-f>": false,
+        "<C-h>": false
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "update.channel": "none",
+    "workbench.colorTheme": "Monokai",
+}
+

@@ -1,0 +1,31 @@
+#notatki
+alias notatki="vim ~/Dropbox/NotatkiPulpit/linux_notatki.txt"
+alias angielski="vim ~/Dropbox/NotatkiPulpit/angielski.txt"
+alias pnotatki="vim ~/Dropbox/NotatkiPulpit/pomysly_na_projekt.txt"
+
+# python
+alias p36="workon python_games36"
+
+alias django="workon django_tutorials"
+alias mg="./manage.py migrate"
+alias mmg="./manage.py makemigrations"
+alias rs="./manage.py runserver"
+alias drs="./manage.py runserver_plus"
+alias dshell="./manage.py shell_plus"
+
+alias projectenv='vim "$VIRTUAL_ENV"/bin/postactivate'
+
+# inne
+
+alias sshi="ssh-add ~/.ssh/tomek_mint_idego"
+alias ssht="ssh-add ~/.ssh/tomek_mint"
+
+# sql
+
+alias sql="mysql -u root -p"
+
+# git 
+
+alias gitall="git add --all ."
+alias gitstat="git status && git branch"
+
