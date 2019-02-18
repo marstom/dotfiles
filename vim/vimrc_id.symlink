@@ -25,7 +25,13 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'rking/ag.vim' " can use silversearcher-ag in vim, must have it installed first
 Plugin 'https://github.com/vim-scripts/vim-auto-save.git' " autosave
 Plugin 'airblade/vim-gitgutter' " highlight new lines in git
-" Plugin 'severin-lemaignan/vim-minimap'
+"
+" syntax plugins
+Plugin 'posva/vim-vue'
+
+" Vim swap
+Plugin 'git@github.com:machakann/vim-swap.git'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -94,6 +100,10 @@ set confirm
 
 " highlight current line brighter color(like pycharm)
 set cursorline 
+
+"make < > shifts keep selection
+vnoremap < <gv
+vnoremap > >gv
  
 "------------------Mappings-------------------------------------
 map Y y$
