@@ -7,27 +7,22 @@ call pathogen#helptags()
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" Plugin 'klen/python-mode'
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'vim-syntastic/syntastic'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tpope/vim-fugitive'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim' " C^p
 Plugin 'tpope/vim-commentary' " comment using gcc
-Plugin 'python.vim' 
 Plugin 'flazz/vim-colorschemes'
-Plugin 'rking/ag.vim' " can use silversearcher-ag in vim, must have it installed first
-Plugin 'https://github.com/vim-scripts/vim-auto-save.git' " autosave
+Plugin 'thanethomson/vim-jenkinsfile'
+
+" Plugin 'https://github.com/vim-scripts/vim-auto-save.git' " autosave
 Plugin 'airblade/vim-gitgutter' " highlight new lines in git
 "
 " syntax plugins
 Plugin 'posva/vim-vue'
+Plugin 'mfukar/robotframework-vim'
 
 " Vim swap
 Plugin 'git@github.com:machakann/vim-swap.git'
@@ -59,13 +54,12 @@ let g:syntastic_mode_map={'mode': 'passive'}
 "-----------------colors-------------------------------------
 
 if has('gui_running')
-    " GUI colors
-    colorscheme 0x7A69_dark
-    colorscheme 3dglasses
+    " GUI colors default
 else
     " Non-GUI (terminal) colors
-    colorscheme 256-grayvim
-    colorscheme Benokai
+    " colorscheme 256-grayvim
+    " colorscheme Benokai
+    colorscheme zenburn
 endif
 
 
