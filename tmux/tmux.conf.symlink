@@ -33,6 +33,11 @@ set -g status-left-length 30
 set -g status-left '#[fg=green](#S) #(whoami)'
 set -g status-right '#[fg=yellow]#(cut -d " " -f 1-3 /proc/loadavg)#[default] #[fg=white]%H:%M#[default]'
 
+# Default path will be current folder!
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
+
 # use fish
 # set -g default-command /usr/bin/fish
 # set -g default-shell /usr/bin/fish
