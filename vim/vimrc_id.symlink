@@ -8,25 +8,26 @@ call pathogen#helptags()
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter' " highlight new lines in git
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim' " C^p
 Plugin 'tpope/vim-commentary' " comment using gcc
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'thanethomson/vim-jenkinsfile'
+
 
 " Plugin 'https://github.com/vim-scripts/vim-auto-save.git' " autosave
-Plugin 'airblade/vim-gitgutter' " highlight new lines in git
 "
 " syntax plugins
 Plugin 'posva/vim-vue'
 Plugin 'mfukar/robotframework-vim'
+Plugin 'thanethomson/vim-jenkinsfile'
 
-" Vim swap
-Plugin 'git@github.com:machakann/vim-swap.git'
 
+" new
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -115,3 +116,24 @@ map <C-H> 20zh " Scroll 20 characters to the left
 
 " plugins mappings
 map <Leader>p :PrevimOpen<CR>
+
+
+
+
+
+
+
+
+
+"  custiom commands
+"
+
+command TestPy1 !pytest % -vs -p no:django
+command Aff !affordability all --filename %
+command GoRun w | !go run %
+
+command Ctags !ctags --languages=python -R .
+
+" command pretty_json !python -m json.tool
+
+
