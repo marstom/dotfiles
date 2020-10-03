@@ -59,7 +59,10 @@ else
     " Non-GUI (terminal) colors
     " colorscheme 256-grayvim
     " colorscheme Benokai
-    colorscheme zenburn
+    " colorscheme zenburn
+    let g:gruvbox_italic=1
+    set bg=dark
+    colorscheme gruvbox
 endif
 
 
