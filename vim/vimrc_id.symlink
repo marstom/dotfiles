@@ -16,6 +16,7 @@ Plugin 'kien/ctrlp.vim' " C^p
 Plugin 'tpope/vim-commentary' " comment using gcc
 Plugin 'flazz/vim-colorschemes'
 Plugin 'thanethomson/vim-jenkinsfile'
+Plugin 'leafgarland/typescript-vim'
 
 " Plugin 'https://github.com/vim-scripts/vim-auto-save.git' " autosave
 Plugin 'airblade/vim-gitgutter' " highlight new lines in git
@@ -55,6 +56,7 @@ let g:syntastic_mode_map={'mode': 'passive'}
 
 if has('gui_running')
     " GUI colors default
+    colorscheme bensday
 else
     " Non-GUI (terminal) colors
     " colorscheme 256-grayvim

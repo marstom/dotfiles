@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 0,
-    "files.autoSave": "off",
+    "files.autoSave": "afterDelay",
     "vim.disableExtension": false, 
     "editor.minimap.enabled": false,
     "git.ignoreLegacyWarning": true,
@@ -40,5 +40,23 @@
         "TODO": {},
         "FIXME": {}
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_style": "Google",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.jediEnabled": false,
 }
 
