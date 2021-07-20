@@ -1,3 +1,4 @@
+#!/bin/bash
 # create links to this files in home directory
 # vim
 ln -s ~/dotfiles/vim/vimrc_id.symlink ~/.vimrc
