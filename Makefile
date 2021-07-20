@@ -16,7 +16,20 @@ apt_install_my_favorite:
 	sudo apt-get install xclip
 	sudo add-apt-repository ppa:jonathonf/vim
 	sudo apt-get install vim
+	sudo apt-get install tmux
+	sudo apt-get install zsh
 
+config_zsh:
+	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+	echo \
+	plugins=\( \
+	    git \
+	    zsh-autosuggestions \
+	    docker \
+	    docker-compose \
+	    z \
+	\) >> ~/.zshrc
 
 #############################
 #         Docker            #
